@@ -1,0 +1,29 @@
+main {
+    width: 100%;
+    height: 100%;
+}
+
+.rightLayout {
+    display: grid;
+    grid-template-rows: auto 2fr;
+    grid-template-columns: 2fr auto;
+
+    header {
+        background-color: red;
+    }
+
+    :global(.dashboard) {
+        background-color: blue;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    aside { 
+        background-color: green;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+}

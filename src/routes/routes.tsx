@@ -1,12 +1,20 @@
-import Dashboard from '../pages/Dashboard/Dashboard'
+import Dashboard from '../components/Dashboard/Dashboard'
+import Home from '../pages/Home/Home'
+import Task from '../pages/Task/Task'
 
 export const routes = [
   {
     path: '/',
-    element: <Dashboard />,
-  },
-  {
-    path: 'dashboard',
-    element: <Dashboard />,
+    element: <Home />,
+    children:[
+      {
+        path:'/',
+        element:<Dashboard/>
+      },
+      {
+        path:'tasks',
+        element:<Task/>
+      },
+    ]
   },
 ]
