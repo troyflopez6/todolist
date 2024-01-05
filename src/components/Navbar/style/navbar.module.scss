@@ -1,8 +1,8 @@
-@import '../../../styles/utility';
+@use '../../../styles/utility' as util;
 
 nav {
     height: 100vh;
-    width: 200px;
+    width: 250px;
     padding: 24px 12px;
     background-color: var(--gray);
     display: flex;
@@ -16,7 +16,7 @@ nav {
         display: flex;
         margin-bottom:48px;
         .icon{
-            @include flexCenter();
+            @include util.flexCenter();
             height: 40px;
             width: 40px;
             border-radius: var(--border-radius-circle);
@@ -25,7 +25,7 @@ nav {
     }
 
     .userDetails {
-        @include flexCenter();
+        @include util.flexCenter();
         flex: 1;
         font-size: 14px;
         font-weight: var(--bold);
