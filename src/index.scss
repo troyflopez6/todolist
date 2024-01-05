@@ -1,0 +1,32 @@
+@use './styles/normalize';
+
+:root {
+    // colors
+    --gray: #F0F0F0;
+    --white: #FFFFFF;
+    --orange: #EE8F01;
+    --gray-dark: #dedede;
+    --dark-shadow: rgba(149, 157, 165, 0.2);
+
+    --border-radius-circle: 50%;
+
+
+    // font
+    --bold:600;
+    --light:400;
+}
+
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./font/Roboto-Light.ttf');
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+.App {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}

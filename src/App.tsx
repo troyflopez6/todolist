@@ -9,8 +9,7 @@ const router = createBrowserRouter(routes)
 const App: FC<AppProps> = () => {
   return (
     <div className='App'>
-      <div className='Nav'>element</div>
-      <RouterProvider router={router} />
+      <RouterProvider router={router}></RouterProvider>
     </div>
   )
 }
