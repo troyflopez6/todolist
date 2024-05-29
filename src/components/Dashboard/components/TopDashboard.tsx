@@ -10,9 +10,9 @@ const TopDashboard: FC<TopDashboardProps> = () => {
   return (
     <div className={style['top-dashboard']}>
       {
-        tasks.map((task) => (
+        tasks.map((task, i) => (
           <TaskCard
-            key={`${task.taskName}-${task.taskId}`}
+            key={`${task.taskName}-${task.taskId}-${i}`}
             task={task}
           />
         ))

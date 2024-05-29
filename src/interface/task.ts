@@ -5,4 +5,5 @@ export default interface Task {
     progress: number
     dateStart: Date
     dateFinished: Date
+    deadline: Date
 }

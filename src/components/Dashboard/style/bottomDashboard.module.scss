@@ -1,0 +1,29 @@
+.bottom {
+    margin: 12px 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    .header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        .title {
+            font-size: 20px;
+            font-weight: var(--bold);
+        }
+        .control {
+            display: flex;
+            gap: 32px;
+            font-size: 14px;
+        }
+    }
+
+    .calendar {
+        height: 100%;
+        width: 100%;
+        border-radius: 12px;
+        border: 1px solid var(--gray-dark);
+        box-shadow: var(--dark-shadow) 0px 8px 24px;
+    }
+}
+

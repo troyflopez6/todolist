@@ -2,6 +2,7 @@ import { FC } from 'react'
 import style from './style/dashboard.module.scss'
 import SideDashboard from './components/SideDashboard'
 import TopDashboard from './components/TopDashboard'
+import BottomDashboard from './components/BottomDashboard'
 interface DashboardProps {
   
 }
@@ -11,7 +12,7 @@ const Dashboard: FC<DashboardProps> = () => {
     <>
       <div className={`${style.dashboard} dashboard` }>
         <TopDashboard />
-        <div className={style['dashboard-bottom']}> bottom </div>
+        <BottomDashboard />
       </div>
       <SideDashboard />
     </>
